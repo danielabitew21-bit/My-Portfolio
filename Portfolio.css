@@ -1,0 +1,374 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    line-height: 1.5;
+}   
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    background: gold;
+    padding-left: 30rem;
+    
+}
+header{
+    position: fixed;
+    top:0; left:0; bottom: 0;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding: 8rem 2rem;
+}
+header .logo{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bolder;
+    width:25rem;  
+    text-align: center;
+}
+header .logo span{
+    text-transform: uppercase;
+    color: orangered;
+}
+header .navbar a{
+    display:block;
+    font-size: 15px;
+    color: blue;
+    margin: 2rem 0;
+    background-color: aqua;
+}
+header .navbar a:hover{
+  background-color: yellow;
+  letter-spacing: .5rem;
+  
+}
+
+
+header .follow a{
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    color: greenyellow;
+    margin: 0 .7rem;
+}
+header .follow a:hover{
+    color: red;
+}
+#menu-bars{
+    position: fixed;
+    top: 1rem; right:1rem;
+    z-index: 10000;
+    background: rgb(64, 255, 0);
+    color: #fff;
+    border-radius: .5rem;
+    padding:1rem 1.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    
+
+}
+.cursor-1{
+    position: absolute;
+    top:500px;left:500px;
+    height:1rem;width:1rem;
+    background: red;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    border-radius:50%;
+    z-index: .10000;
+}
+.cursor-2{
+    position: absolute;
+    top:500px;left:500px;
+    height:4rem;width:4rem;
+    border:.1rem solid red;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    border-radius:50%;
+    z-index: .10000;
+    transition: .3s linear;
+}
+.cursor-1.active{
+  height: 7rem;
+  width: 7rem;
+  opacity: .3;
+}
+
+
+.cursor-2.active{
+    display: none;
+}
+section{
+    padding: 1rem 5%;
+    min-height: 100vh;
+}
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.home .image{
+    flex: 1 1 40rem;
+}
+.home .image img{
+    width: 100%;
+}
+.home .content .hi{
+    font-size: 3.5rem;
+    color:red;
+}
+.home .content h3{
+    font-size: 3rem;
+    color:black;
+    text-transform: uppercase;
+}
+.home .content .info{
+    font-size: 2rem;
+    color:black;}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .2rem 1.5rem;
+    background:rgb(64, 255, 0);
+    color:#fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background-color:blue;
+    letter-spacing: .5rem;
+}
+    
+
+.home .content span{
+    color:black;
+    text-transform: uppercase;
+}
+.home .content{
+    flex: 1 1 40rem;
+}
+.heading{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: green;
+    text-transform: capitalize;
+}
+.heading span{
+    color:orangered;
+}
+.about .row-1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+.about .row-1 .content{
+    flex: 1 1 50rem;
+
+}
+.about .row-1 .content h2{
+    color: #333;
+    font-size: 3.5rem;
+
+}
+.about .row-1 .content p{
+    color: #121;
+    font-size: 1.7rem;   
+}
+.about .row-1 .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+    
+}
+.about .row-1 .content .box-container .box{
+  flex: 1 1 20rem;
+}
+.about .row-1 .content .box-container .box span{
+  color: red;
+}
+.about .row-2 .skills .progress h3{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    font-size: 1.7rem;
+    color: #111;
+    font-weight: 400;
+
+}
+.about .row-2 .skills .progress .bar{
+  width: 100%;
+  background: #ccc;
+  overflow-x: hidden;
+  height: 1rem;
+  border-radius:50rem;
+
+}
+.about .row-2 .skills .progress .bar span{
+    display: block;
+    height: 100%;
+    background: orangered
+}
+.about .row-2 .skills .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+.about .row-2 .skills .progress:nth-child(2) .bar span{
+    width: 95%;
+}
+.about .row-2 .skills .progress:nth-child(3) .bar span{
+    width: 90%;
+}
+.about .row-2 .skills .progress:nth-child(4) .bar span{
+    width: 80%;
+}
+.about .row-1 .image{
+    flex: 1 1 25rem;
+}
+.projects .box-container .box{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 24px;
+   max-width: 900px;
+   margin:0 auto;
+}
+.projects .box-container .box .image{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+}
+image img{
+ width: 300px;
+ height: 200px;
+ object-fit: cover;
+ display: block;
+}
+.image h3{
+margin: 16px 16px 8px 16px;
+font-size: 1.25rem;
+color: #1a1; 
+}
+.image p{
+    font-size: 2rem;
+    color: #555555;
+    line-height: 1.5;
+    padding: 10px;
+}
+.image li{
+    margin: 5px 20px;
+    padding: 0 10px;
+    font-size: medium;
+    
+}
+.Git{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    background-color: deepskyblue;
+}
+.Git:hover{
+  background-color: red;
+  color: white;
+}
+.image ul{
+    list-style: circle;
+}
+.lightbox{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: cener;
+    align-items: center;
+    cursor: pointer;
+}
+.lightbox.active{
+display:flex;
+}
+.lightbox img{
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+}
+.lightbox-close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+.education .image img{
+width:300px;
+height:300px;
+}
+.contacts .contact{
+    background-color: orange;
+}
+.contacts .contact h2 span{
+    color:#1a1;
+    font-size: medium;
+    font-style: italic;
+    font-display: initial;
+}
+.contacts .contact .follow a{
+    width: 100px;
+    height: 100px;
+    font-size: 5rem;
+    margin: 0 .7rem;
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    body{
+        padding: 0;
+    }
+    #menu-bars{
+        display: initial;
+    }
+    header{
+       left: -120%; 
+    }
+    header.active{
+        left:0;
+    }
+}
+@media(max-width:500px){
+    html{
+        font-size: 50%;
+    }
+    header{
+        width:100%;
+    }
+}
+@media(max-width:600px){
+    .image{
+        grid-template-columns: 1fr;
+    }
+}
