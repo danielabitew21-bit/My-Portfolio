@@ -260,16 +260,17 @@ image img{
  width: 300px;
  height: 200px;
  object-fit: cover;
+ image-resolution: 100%;
  display: block;
 }
 .image h3{
 margin: 16px 16px 8px 16px;
-font-size: 1.25rem;
+font-size: 2.5rem;
 color: #1a1; 
 }
 .image p{
     font-size: 2rem;
-    color: #555555;
+    color: whitesmoke;
     line-height: 1.5;
     padding: 10px;
 }
@@ -284,14 +285,14 @@ color: #1a1;
     justify-content: center;
     align-items: center;
     color: blue;
-    background-color: yellow;
+    background-color: black;
 }
 .Git:hover{
-  background-color: red;
-  color: white;
+  background-color: whitesmoke;
+  color: red;
 }
 .image ul{
-    list-style: circle;
+    list-style: square;
 }
 .lightbox{
     display: none;
