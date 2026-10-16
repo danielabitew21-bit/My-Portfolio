@@ -283,8 +283,8 @@ color: #1a1;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: red;
-    background-color: deepskyblue;
+    color: blue;
+    background-color: yellow;
 }
 .Git:hover{
   background-color: red;
