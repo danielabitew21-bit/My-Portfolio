@@ -16,7 +16,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: gold;
+    background: #F3D36B;
     padding-left: 30rem;
     
 }
@@ -274,7 +274,7 @@ color: #1a1;
 }
 .image p{
     font-size: 2rem;
-    color: whitesmoke;
+    color: grey;
     line-height: 1.5;
     padding: 10px;
 }
